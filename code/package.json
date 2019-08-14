@@ -1,0 +1,45 @@
+{
+    "name": "solarized-zero",
+    "version": "0.0.0",
+    "publisher": "Aksamyt",
+    "engines": {
+        "vscode": "^1.21.0"
+    },
+    "license": "SEE LICENSE IN COPYING",
+
+    "displayName": "Solarized ZERO",
+    "description": "Solarized theme without too much colour, for the day and the night",
+    "author": {
+        "name": "Alexandre Szymocha",
+        "url": "https://github.com/Aksamyt"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "homepage": "https://github.com/Aksamyt/solarized-zero",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Aksamyt/solarized-zero"
+    },
+    "keywords": [
+        "theme",
+        "solarized",
+        "bold",
+        "pro",
+        "high",
+        "contrast"
+    ],
+    "galleryBanner": {
+        "theme": "dark",
+        "color": "#002b36"
+    },
+    "contributes": {
+        "themes": [
+            {
+                "label": "Solarized ZERO Light",
+                "uiTheme": "vs",
+                "path": "./themes/solarized-zero-light.json"
+            }
+        ]
+    }
+}
