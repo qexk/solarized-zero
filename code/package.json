@@ -1,6 +1,6 @@
 {
     "name": "solarized-zero",
-    "version": "0.0.0",
+    "version": "0.1.0",
     "publisher": "Aksamyt",
     "engines": {
         "vscode": "^1.21.0"
@@ -39,6 +39,11 @@
                 "label": "Solarized ZERO Light",
                 "uiTheme": "vs",
                 "path": "./themes/solarized-zero-light.json"
+            },
+            {
+                "label": "Solarized ZERO Dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/solarized-zero-dark.json"
             }
         ]
     }
