@@ -29,6 +29,7 @@
         "high",
         "contrast"
     ],
+    "icon": "icon.png",
     "galleryBanner": {
         "theme": "dark",
         "color": "#002b36"
