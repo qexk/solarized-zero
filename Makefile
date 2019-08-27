@@ -25,5 +25,6 @@ clean: $(SUBTHEMES)
 distclean: RULE:=distclean
 distclean: $(SUBTHEMES)
 
+.PHONY: $(SUBTHEMES)
 $(SUBTHEMES): %: %/Makefile
 	@${MAKE} -C $* $(RULE)
