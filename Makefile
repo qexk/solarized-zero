@@ -10,6 +10,7 @@ M4FLAGS			:=-I $(PROJECT_ROOT) \
 export INVOKE_M4	:=$(M4) $(M4FLAGS)
 
 SUBTHEMES		:=code
+PUBLISH_TARGETS		:=${addprefix publish-,$(SUBTHEMES)}
 
 .PHONY: all
 all: subthemes
@@ -28,3 +29,10 @@ distclean: $(SUBTHEMES)
 .PHONY: $(SUBTHEMES)
 $(SUBTHEMES): %: %/Makefile
 	@${MAKE} -C $* $(RULE)
+
+.PHONY: publish
+publish: $(PUBLISH_TARGETS)
+
+.PHONY: $(PUBLISH_TARGETS)
+$(PUBLISH_TARGETS): publish-%: %/Makefile
+	@${MAKE} -C $* publish
